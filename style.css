@@ -1,24 +1,26 @@
 @import "http://fonts.fontstorage.com/import/lato.css";
-
 html {
     font-size: 16px;
 }
+
 body {
     background: #fff;
-    margin:0;
-    padding: 2rem 7% 3rem 15%;
+    margin: 0;
+    padding: 2rem 5% 3rem 10%;
     font-family: Lato, Helvetica, Helvetica Neue, Arial, sans-serif;
     font-size: 1em;
-    max-width: 50em;
+    max-width: 65em;
 }
 
 img {
     display: block;
     max-width: 100%;
 }
+
 article {
     padding-top: 1em;
 }
+
 h2 small {
     margin-left: 1em;
 }
@@ -29,12 +31,13 @@ h2 small a {
     margin-left: 1em;
 }
 
-button + button {
+button+button {
     margin-left: 1em;
 }
 
 
 /* line 1395, scss/bezborody.dev.scss */
+
 .button-simple {
     padding: 3px 12px;
     border: 1px solid #c0c0c0;
@@ -58,9 +61,12 @@ button + button {
     -webkit-transition-duration: 0.1s;
     -o-transition-duration: 0.1s;
     transition-duration: 0.1s;
-  }
-  /* line 1405, scss/bezborody.dev.scss */
-  .button-simple:hover {
+}
+
+
+/* line 1405, scss/bezborody.dev.scss */
+
+.button-simple:hover {
     background: #f8e9ba;
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fff5c4), color-stop(100%, #f1ddb0));
     background: -webkit-linear-gradient(top, #fff5c4, #f1ddb0);
@@ -68,9 +74,12 @@ button + button {
     background: -o-linear-gradient(top, #fff5c4, #f1ddb0);
     background: -ms-linear-gradient(top, #fff5c4, #f1ddb0);
     background: linear-gradient(top, #fff5c4, #f1ddb0);
-  }
-  /* line 1409, scss/bezborody.dev.scss */
-  .button-simple:active {
+}
+
+
+/* line 1409, scss/bezborody.dev.scss */
+
+.button-simple:active {
     border-color: silver;
     color: #000000;
     background: -moz-linear-gradient(top, #fff0be, #ead6aa);
@@ -82,28 +91,58 @@ button + button {
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
-  }
-  /* line 1416, scss/bezborody.dev.scss */
-  .button-simple[disabled] {
+}
+
+
+/* line 1416, scss/bezborody.dev.scss */
+
+.button-simple[disabled] {
     opacity: 0.7;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
-  }
-  /* line 1417, scss/bezborody.dev.scss */
-  .button-simple[disabled]:hover {
+}
+
+
+/* line 1417, scss/bezborody.dev.scss */
+
+.button-simple[disabled]:hover {
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fff0be), color-stop(100%, #ead6aa));
     background: -webkit-linear-gradient(top, #fff0be, #ead6aa);
     background: -moz-linear-gradient(top, #fff0be, #ead6aa);
     background: -o-linear-gradient(top, #fff0be, #ead6aa);
     background: -ms-linear-gradient(top, #fff0be, #ead6aa);
     background: linear-gradient(top, #fff0be, #ead6aa);
-  }
-  /* line 1420, scss/bezborody.dev.scss */
-  .button-simple[disabled]:active {
+}
+
+
+/* line 1420, scss/bezborody.dev.scss */
+
+.button-simple[disabled]:active {
     border-color: #eaeaea silver #707070 silver;
     -webkit-box-shadow: none !important;
     -moz-box-shadow: none !important;
     box-shadow: none !important;
-  }
+}
+
+@media screen and (min-width: 500px) {
+    /* no grid support? */
+    .sidebar {
+        float: right;
+        width: 25.1489%;
+        font-size: 85%;
+        margin-top: 4.5rem;
+    }
+    .content {
+        float: left;
+        width: 74.7872%;
+        padding-right: 5rem;
+        box-sizing: border-box;
+    }
+}
+
+.wrapper > * {
+    /* needed for the floated layout*/
+    margin-bottom: 10px;
+}
