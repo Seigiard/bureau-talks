@@ -4,11 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Переговоры</title>
-    <link rel="stylesheet" href="style.css?201711251700" />
+    <link rel="stylesheet" href="style.css?201711251800" />
 </head>
 
 <body>
-    <h1 id="переговоры">Переговоры</h1>
+    <header>
+        <h1 id="переговоры">Переговоры</h1>
+        <nav>
+            <a href="negotiations.html">Договориться можно обо всём</a>
+        </nav>
+    </header>
     <p>
         <button class="button-simple" onclick="showRandom()">Выбрать тему</button>
         <button class="button-simple" onclick="showAll()">Показать все</button>
@@ -25,8 +30,12 @@
                 <strong>Открыты к переговорам</strong>
             </p>
             <ul>
-                <li><a href="http://t.me/seigiard">seigiard</a></li>
-                <li><a href="http://t.me/nimther">nimther</a></li>
+                <li>
+                    <a href="http://t.me/seigiard">seigiard</a>
+                </li>
+                <li>
+                    <a href="http://t.me/nimther">nimther</a>
+                </li>
             </ul>
         </aside>
         <main class="content">
@@ -233,8 +242,29 @@
 
                 <p>Ваша задача — поговорить, чтобы решить возникшую проблему.</p>
             </article>
+            <article>
+                <h2>
+                    Тема 9
+                    <small>
+                        <a href="https://www.youtube.com/watch?v=u7k6-zLDmcE">Лучшие переговоры</a>
+                    </small>
+                </h2>
+                <p>Вы — сотрудник компании по ремонту и обслуживанию серверов ООО «Молотком по плате». Вам звонит директор фирмы
+                    «Писюк», с которым у вас заключен договор. Директор возмущен суммой в 400 тысяч рублей за последнее обслуживание
+                    и ремонт пяти(?) серверов. Ранее от вас ему приходили счета не более чем на 100 тысяч. Директор говорит,
+                    что такие же новые сервера стоят 450 тысяч и просит скидку, аргументируя тем, что ремонт не может стоит
+                    почти столько же, сколько новое железо.</p>
+                <p>В договоре нигде не было сказано, что вы обязаны оповещать клиента о стоимости работ заранее (но это не точно).
+                    </p>
+
+                <p>Задача: Предложить клиенту решение проблемы, не снижая цену на услугу.</p>
+
+            </article>
         </main>
     </div>
+    <footer>
+        <p>Материалы собраны <a href="http://t.me/seigiard">Андреем Борисенко</a> при помощи <a href="http://t.me/nimther">Ивана Колесникова</a>.</p>
+    </footer>
     <script>
         const articles = [...document.querySelectorAll('article')];
 
