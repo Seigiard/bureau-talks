@@ -16,3 +16,15 @@ img {
     display: block;
     max-width: 100%;
 }
+h2 {
+    margin-top: 2em;
+}
+h2 small {
+    margin-left: 1em;
+}
+
+h2 small a {
+    font-weight: normal;
+    font-size: .75em;
+    margin-left: 1em;
+}
