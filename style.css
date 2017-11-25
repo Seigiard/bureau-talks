@@ -16,8 +16,8 @@ img {
     display: block;
     max-width: 100%;
 }
-h2 {
-    margin-top: 2em;
+article {
+    padding-top: 1em;
 }
 h2 small {
     margin-left: 1em;
@@ -28,3 +28,82 @@ h2 small a {
     font-size: .75em;
     margin-left: 1em;
 }
+
+button + button {
+    margin-left: 1em;
+}
+
+
+/* line 1395, scss/bezborody.dev.scss */
+.button-simple {
+    padding: 3px 12px;
+    border: 1px solid #c0c0c0;
+    border-color: #eaeaea silver #707070 silver;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 13px;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fff0be), color-stop(100%, #ead6aa));
+    background: -webkit-linear-gradient(top, #fff0be, #ead6aa);
+    background: -moz-linear-gradient(top, #fff0be, #ead6aa);
+    background: -o-linear-gradient(top, #fff0be, #ead6aa);
+    background: -ms-linear-gradient(top, #fff0be, #ead6aa);
+    background: linear-gradient(top, #fff0be, #ead6aa);
+    background: #f4e3b4;
+    text-shadow: 0 1px 0px rgba(255, 255, 255, 0.8);
+    -moz-transition-duration: 0.1s;
+    -webkit-transition-duration: 0.1s;
+    -o-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+  }
+  /* line 1405, scss/bezborody.dev.scss */
+  .button-simple:hover {
+    background: #f8e9ba;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fff5c4), color-stop(100%, #f1ddb0));
+    background: -webkit-linear-gradient(top, #fff5c4, #f1ddb0);
+    background: -moz-linear-gradient(top, #fff5c4, #f1ddb0);
+    background: -o-linear-gradient(top, #fff5c4, #f1ddb0);
+    background: -ms-linear-gradient(top, #fff5c4, #f1ddb0);
+    background: linear-gradient(top, #fff5c4, #f1ddb0);
+  }
+  /* line 1409, scss/bezborody.dev.scss */
+  .button-simple:active {
+    border-color: silver;
+    color: #000000;
+    background: -moz-linear-gradient(top, #fff0be, #ead6aa);
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fff0be), color-stop(100%, #ead6aa));
+    background: -webkit-linear-gradient(top, #fff0be, #ead6aa);
+    background: linear-gradient(top, #fff0be, #ead6aa);
+    background: -o-linear-gradient(top, #fff0be, #ead6aa);
+    background: -ms-linear-gradient(top, #fff0be, #ead6aa);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  /* line 1416, scss/bezborody.dev.scss */
+  .button-simple[disabled] {
+    opacity: 0.7;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+  /* line 1417, scss/bezborody.dev.scss */
+  .button-simple[disabled]:hover {
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fff0be), color-stop(100%, #ead6aa));
+    background: -webkit-linear-gradient(top, #fff0be, #ead6aa);
+    background: -moz-linear-gradient(top, #fff0be, #ead6aa);
+    background: -o-linear-gradient(top, #fff0be, #ead6aa);
+    background: -ms-linear-gradient(top, #fff0be, #ead6aa);
+    background: linear-gradient(top, #fff0be, #ead6aa);
+  }
+  /* line 1420, scss/bezborody.dev.scss */
+  .button-simple[disabled]:active {
+    border-color: #eaeaea silver #707070 silver;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+  }
