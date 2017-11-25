@@ -6,8 +6,8 @@ html {
 body {
     background: #fff;
     margin:0;
-    padding:2rem 2rem 3rem 4rem;
-    font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+    padding: 2rem 7% 3rem 15%;
+    font-family: Lato, Helvetica, Helvetica Neue, Arial, sans-serif;
     font-size: 1em;
     max-width: 50em;
 }
