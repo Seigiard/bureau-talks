@@ -125,14 +125,18 @@ button+button {
     -moz-box-shadow: none !important;
     box-shadow: none !important;
 }
+.sidebar {
+    margin-bottom: 4.5rem;
+}
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 800px) {
     /* no grid support? */
     .sidebar {
         float: right;
         width: 25.1489%;
         font-size: 85%;
         margin-top: 4.5rem;
+        margin-bottom: 0;
     }
     .content {
         float: left;
