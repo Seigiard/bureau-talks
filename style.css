@@ -21,6 +21,10 @@ article {
     padding-top: 1em;
 }
 
+h2 {
+    margin-top: 3rem;
+}
+
 h2 small {
     font-weight: normal;
     font-size: .65em;
@@ -32,9 +36,13 @@ h2 small span {
     margin-left: 1em;
 }
 
-p+ul {
-    margin-top: -.7rem;
+p+ul, p+ol {
+    margin-top: -.6rem;
     padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: .5rem;
 }
 
 button+button {
